@@ -4,7 +4,7 @@ using Common;
 
 namespace Core.Services.Orders
 {
-    [AutoRegister(AutoRegisterTypes.Singleton)]
+    [AutoRegister(AutoRegisterTypes.Scope)]
     public class UpdateOrderService : IUpdateOrderService
     {
         public void Update(Order order, Guid productId, string customerName, int quantity,
