@@ -90,7 +90,7 @@ namespace WebApi.Controllers
         [HttpDelete]
         public HttpResponseMessage DeleteAllProducts()
         {
-            // _deleteOrderService.De();
+            
             _deleteProductService.DeleteAll();
             return Found();
         }
